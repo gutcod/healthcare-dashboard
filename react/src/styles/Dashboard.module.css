@@ -1,0 +1,62 @@
+.dashboard {
+  background-color: #1a202c;
+  min-height: auto;
+  padding: 2rem;
+  color: white;
+  width: 500px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.dataFetcher {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.patientDataDisplay {
+  background-color: #2d3748;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.vitalSigns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vitalSign {
+  text-align: center;
+}
+
+.vitalSign h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.vitalSign p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.vitalsChart {
+  background-color: #2d3748;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.loading,
+.error {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}

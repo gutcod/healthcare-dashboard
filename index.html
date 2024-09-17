@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iwosan Healthcare Dashboard</title>
+    <link rel="stylesheet" href="./scss/main.scss">
+</head>
+<body>
+<div class="dashboard">
+    <nav class="sidebar">
+        <div class="logo">
+            <img src="assets/Logo.png" alt="Iwosan">
+        </div>
+        <ul class="menu">
+            <li class="active"><a href="#overview">Overview</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+            <li><a href="#patients">Patients</a></li>
+            <li><a href="#chats">Chats</a></li>
+        </ul>
+        <div class="account">
+            <a href="#settings">Settings</a>
+            <a href="#logout">Logout</a>
+        </div>
+        <div class="emergency-hotlines">
+            <h3>Emergency Hotlines:</h3>
+            <p>+234 92 028 3181</p>
+            <p>+234 60 623 2098</p>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="navbar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search pathology results">
+            </div>
+            <div class="user-info">
+                <img src="path_to_avatar.png" alt="Doctor Avatar">
+                <div>
+                    <span class="name">Akule Vivian</span>
+                    <span class="role">DOCTOR</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="welcome">
+            <h1>Welcome Vivian,</h1>
+            <p>How're you feeling today?</p>
+        </section>
+        <div class="container">
+            <div class="dashboard-grid"></div>
+            <div id="react-root"></div>
+        </div>
+
+    </main>
+</div>
+<script type="module" src="/react/src/main.tsx"></script>
+<script src="js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin transition($property: all) {
+  transition: $property $transition-speed $transition-ease;
+}
+
+@mixin card-style {
+  background-color: $card-bg;
+  border-radius: $card-border-radius;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 250px;
+}
+
+@mixin hover-effect($color: $text-light) {
+  @include transition(color);
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == md {
+    @media (min-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == xl {
+    @media (min-width: $breakpoint-xl) { @content; }
+  }
+}
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $sidebar-bg;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $text-gray;
+    border-radius: 4px;
+  }
+}
